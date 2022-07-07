@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery.js と chart.js</title>
+</head>
+<body>
+  <header>
+    <h1>jQuery.js と chart.js</h1>
+  </header>
+  
+  <div>
+    <h2>jQuery</h2>
+    <p id="hogehoge">ほげほげ</p>
+
+    <input id="input-hoge" type="text">
+  </div>
+
+  <div>
+    <h2>chart.js</h2>
+    <div>
+      <!-- グラフを描画したい場所にcanvasタグ -->
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div>
+      <!-- グラフを描画したい場所にcanvasタグ -->
+      <canvas id="myChart2"></canvas>
+    </div>
+  </div>
+
+  <!-- jQueryのCDN読み込み（jQueryの公式からCDNを探す） -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+  <!-- chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js" integrity="sha512-5m2r+g00HDHnhXQDbRLAfZBwPpPCaK+wPLV6lm8VQ+09ilGdHfXV7IVyKPkLOTfi4vTTUVJnz7ELs7cA87/GMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- 自分のjavascriptファイル -->
+  <script src="./js/jquery-test.js"></script>
+  <script src="./js/chart-test.js"></script>
+
+</body>
+</html>
