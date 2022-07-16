@@ -2,42 +2,149 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>jQuery.js と chart.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>生産性ゼロのサイト</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>jQuery.js と chart.js</h1>
+  <header id="top">
+    <div class="container">
+      <img src="./images/logo_transparent.png" class="logo" alt="logo">
+      <div class="header-text">
+        <h1>ようこそ</h1>
+        <h1>生産性ゼロの暇つぶし場所へ。</h1>
+        <span class="square"></span>
+        <p>ここに行き着いたということは、もうゲームを楽しむしかありません。「どうあがいてもロイがおすすめされるスマブラおすすめキャラ診断」「ただのジャンケン」「連打クリック」の3つをご用意しております</p>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+      </div>
+    </div>
+
+    <nav id="sideNav">
+      <ul>
+        <li><a href="#top">トップ</a></li>
+        <li><a href="#first-content">1「どうあがいてもロイがおすすめされるスマブラおすすめキャラ診断」</a></li>
+        <li><a href="#second-content">2「ただのジャンケン」</p></a></li>
+        <li><a href="#third-content">3「連打クリック」</a></li>
+      </ul>
+    </nav>
+    <span class="menu_square" id="menuBtn">Nav</span>
+
   </header>
   
-  <div>
-    <h2>jQuery</h2>
-    <p id="hogehoge">ほげほげ</p>
-
-    <input id="input-hoge" type="text">
-  </div>
-
-  <div>
-    <h2>chart.js</h2>
-    <div>
-      <!-- グラフを描画したい場所にcanvasタグ -->
-      <canvas id="myChart"></canvas>
+  <section id="first-content">
+    <div class="first-content-left-col">
+      <img src="./images/Team of business people putting hands up together.jpg" alt="first-content">
     </div>
-
-    <div>
-      <!-- グラフを描画したい場所にcanvasタグ -->
-      <canvas id="myChart2"></canvas>
+    <div class="first-content-right-col">
+      <div class="first-content-text">
+        <h1>どうあがいてもロイがおすすめされるスマブラおすすめキャラ診断</h1>
+        <span class="square"></span>
+        <p>まずは、あなたの気質に一番合致したスマブラのキャラを探しましょう。簡単な質問に答えるだけで、あなたに最もアジャストされたキャラをピックアップします。しかし、どうあがいても、ロイがおすすめされることは覆りません。</p>
+        <br><br>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+        <h2>ユーザーの感想</h2>
+        <h3>「ここでロイに出会えて、本当によかった！」</h3>
+        <h3>「ロイって、最高！」</h3>
+        <h3>「どうあがいても、やっぱりロイでした」</h3>
+        <button class="common-btn" onclick="location.href='./first-content.html'">プレイする</button>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- jQueryのCDN読み込み（jQueryの公式からCDNを探す） -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <section id="second-content">
+    <div class="second-content-text">
+      <h1>ただのジャンケン</h1>
+    </div>
+    <div class="second-content-row">
+      <div class="second-content-col">
+        <img src="./images/logo.png" alt="pic-1">
+        <h4>ジャンケンしませんか？？</h4>
+        <p>ただのジャンケンをするだけのプロジェクトです</p>
+      </div>
+      <div class="second-content-col">
+        <img src="./images/logo.png" alt="pic-2">
+        <h4>ジャンケンしたくないですか？？</h4>
+        <p>ジャンケンしたくない人なんていないですよね</p>
+      </div>
+      <div class="second-content-col">
+        <img src="./images/logo.png" alt="pic-3">
+        <h4>ジャンケンできないんですか？？</h4>
+        <p>ジャンケンする能力があるって証明してください</p>
+      </div>
+    </div>
+    <div class="second-content-btn">
+      <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span>
+      </div>
+      <button class="common-btn" onclick="location.href='./second-content.html'">プレイする</button>
+    </div>
+  </section>
 
-  <!-- chart.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js" integrity="sha512-5m2r+g00HDHnhXQDbRLAfZBwPpPCaK+wPLV6lm8VQ+09ilGdHfXV7IVyKPkLOTfi4vTTUVJnz7ELs7cA87/GMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <section id="third-content">
+    <div class="container third-content-row">
+      <div class="third-content-left-col">
+        <div class="third-content-text">
+          <h1>連打クリック</h1>
+          <span class="square"></span>
+          <p>最後は、ひたすらクリックしまくりましょう！</p>
+          <button class="common-btn">プレイする</button>
+          <div class="line">
+            <span class="line-1"></span><br>
+            <span class="line-2"></span><br>
+            <span class="line-3"></span>
+          </div>
+        </div>
+      </div>
+      <div class="third-content-right-col">
+        <img src="./images/help-support-climbing-employee-from-mentor-leader-hand-team-corporate-people-walking-up-ladder-together-flat-vector-illustration-success-career-growth-leadership-teamwork-concept_74855-21923.webp" alt="course-pic">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-row">
+      <hr>
+      <div class="footer-left-col">
+        <div class="footer-links">
+          <div class="link-title"><a href="./index.html">HOME</a></div>
+          <div class="link-title"><a href="./first-content.html">1「どうあがいてもロイがおすすめされるスマブラおすすめキャラ診断」</a></div>
+          <div class="link-title"><a href="./second-content.html">2「ただのジャンケン」</a></div>
+          <div class="link-title"><a href="./third-content.html">3「連打クリック」</a></div>
+        </div>
+      </div>
+      <div class="footer-right-col">
+        <div class="footer-logo">
+          <img src="./images/logo_transparent.png" alt="logo">
+        </div>
+        <div class="copyright-text">
+          <div>
+            Image Copyright &copy;
+          </div>
+          <a href="https://www.freepik.com/vectors/career-opportunities">Career opportunities vector created by pch.vector - www.freepik.com</a>
+          <a href='https://www.freepik.com/vectors/business-flat'>Business flat vector created by pch.vector - www.freepik.com</a>
+          <a href="https://www.freepik.com/vectors/career">Career vector created by pch.vector - www.freepik.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- 自分のjavascriptファイル -->
-  <script src="./js/jquery-test.js"></script>
-  <script src="./js/chart-test.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>
 </html>

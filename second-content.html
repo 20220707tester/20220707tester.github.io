@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>生産性ゼロのサイト</title>
+  <link rel="stylesheet" href="/css/second-content.css">
+</head>
+<body>
+
+  <section id="first-content">
+    <div class="first-content-text">
+      <h1>ただのジャンケン</h1>
+    </div>
+    <div class="first-content-btn">
+      <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="first-content-text">
+        <h1>あなたはどの手を出す？？</h1>
+      </div>
+      <div class="janken_images">
+        <img src="./images/janken_gu.png" onclick="play('グー')" alt="goo">
+        <img src="./images/janken_choki.png" onclick="play('チョキ')" alt="goo">
+        <img src="./images/janken_pa.png" onclick="play('パー')" alt="goo">
+      </div>
+
+      <div id="scroll_here" class="first-content-text">
+        <h1>あなたの手</h1>
+      </div>
+      <div  class="janken_images">
+        <div id="my_hand">ここにあなたの手が表示されます</div>
+      </div>
+      <div class="first-content-text">
+        <h1>コンピューターの手</h1>
+      </div>
+      <div class="janken_images">
+        <div id="computer_hand">ここにコンピューターの手が表示されます</div>
+      </div>
+      <div id="computer_hand" class="result">
+        <p id="result">ここに結果が表示されます</p>
+      </div>
+
+      <div class="first-content-btn">
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-row">
+      <hr>
+      <div class="footer-left-col">
+        <div class="footer-links">
+          <div class="link-title"><a href="./index.html">HOME</a></div>
+          <div class="link-title"><a href="./first-content.html">1「どうあがいてもロイがおすすめされるスマブラおすすめキャラ診断」</a></div>
+          <div class="link-title"><a href="./second-content.html">2「ただのジャンケン」</a></div>
+          <div class="link-title"><a href="./third-content.html">3「連打クリック」</a></div>
+        </div>
+      </div>
+      <div class="footer-right-col">
+        <div class="footer-logo">
+          <img src="./images/logo_transparent.png" alt="logo">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 自分のjavascriptファイル -->
+  <script src="./js/second-content.js"></script>
+
+</body>
+</html>
